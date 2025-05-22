@@ -1,6 +1,11 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
 import Login from './auth/Login.vue'
+
+const tenant_name = import.meta.env.VITE_APP_NAME;
+
+const tenant_description = import.meta.env.VITE_APP_DESCRIPTION;
+
 </script>
 
 <template>
@@ -10,8 +15,8 @@ import Login from './auth/Login.vue'
     <div class="w-1/2 relative hidden md:block">
       <img src="/images/3094352.jpg" class="w-full h-full object-cover" />
       <div class="absolute top-10 left-50 bg-black/60 text-white p-6 rounded-xl max-w-md">
-        <h2 class="text-3xl font-bold mb-2">Bienvenido a [tenant_name].</h2>
-        <p>[tenant_text].</p>
+        <h2 class="text-3xl font-bold mb-2">Bienvenido a {{ tenant_name }}.</h2>
+        <p>{{ tenant_description }}.</p>
       </div>
     </div>
 
