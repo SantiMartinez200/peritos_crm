@@ -14,6 +14,11 @@ const mainNavItems: NavItem[] = [
         href: '/dashboard',
         icon: LayoutGrid,
     },
+    {
+        title: 'Publicaciones',
+        href: 'create-post',
+        icon: LayoutGrid,
+    },
 ];
 
 const footerNavItems: NavItem[] = [
